@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" placeholder="Enter name" id="name">
+    <input type="text" placeholder="Enter last Name" id="lastname">
+    <input type="text" placeholder="Enter Email ID" id="emailID">
+    <input type="text" placeholder="Enter Phone" id="phone">
+    <button onclick="showDetailes()">Show Details</button>
+    <div id="demo">
+      <p id="myName">Mani</p>
+      <p id="lastName">A</p>
+      <p id="email">mani@gmail.com</p>
+      <p id="phoneN">987654321</p>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    function showDetailes() {
+      var name = $('#name').val();
+      var lastName = $('#lastname').val();
+      var emailID = $('#emailID').val();
+      var phone = $('#phone').val();
+      // var name = document.getElementById('name').value;
+      // var lastName = document.getElementById('lastname').value;
+      // var emailID = document.getElementById('emailID').value;
+      // var phone = document.getElementById('phone').value;
+
+      // document.getElementById("myName").innerText = name;
+      // document.getElementById("lastName").innerText = lastName;
+      // document.getElementById("email").innerText = emailID;
+      // document.getElementById("phone").innerText = phone;
+
+      $("#myName").text(name);
+      $("#lastName").text(lastName);
+      $("#email").text(emailID);
+      $("#phoneN").text(phone);
+    }
+  </script>
+</body>
+
+</html>

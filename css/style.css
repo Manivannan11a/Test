@@ -1,0 +1,26 @@
+body {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    padding: 50px;
+    width: 500px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+#demo {
+    padding-top: 50px;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.table {
+    width: 100%;
+}
